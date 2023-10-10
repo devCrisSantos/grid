@@ -25,7 +25,7 @@
 			if(date('Y')==2023) echo date('Y');
 			else echo "2023 - ".date('Y');
 		?>
-		- Todos os direitos reservados</b>
+		- Todos os direitos reservados sssssssssss</b>
 	</div>	    
 </body>
 </html>
