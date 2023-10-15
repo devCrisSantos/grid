@@ -115,7 +115,14 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
+.borda-arredondada {
+	width: 200px;
+	height: 70px;
+	background-color: #ffffcc; /* Cor de fundo da div */           
+	border-radius: 30px; /* Define um raio para as bordas, criando um efeito arredondado */
+	text-align: center;
+	color: #fff; /* Cor do texto dentro da div */
+	line-height: 200px; /* Centraliza verticalmente o texto */}
 
 
 //CHECKBOX STYLE

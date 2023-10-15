@@ -455,22 +455,60 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px; } }
+  margin-left: auto; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas automáticas que se ajustam ao tamanho da tela */
+  gap: 100px; /* Espaçamento entre os itens */
+  padding: 20px; /* Espaçamento ao redor do grid */}
+  
+  @media (min-width: 576px) {.container {max-width: 540px;  } }
+  @media (min-width: 768px) {.container {max-width: 720px;  } }
+  @media (min-width: 992px) {.container {max-width: 960px;  } }
+  @media (min-width: 1200px){.container {max-width: 1000px; } }
+
+.item {
+	position: relative;
+	/*background: #fff;*/
+	border-radius: 50px;
+	-webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+	-moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+	box-shadow: 0px 20px 64px -15px rgba(0, 0, 0, 0.24); }
+.item h3 {
+	font-weight: 700;
+	font-size: 20px;
+	color: #8d448b; }
+.item .icon {
+	width: 80px;
+	height: 80px;
+	background: #8d448b;
+	border-radius: 50%;
+	font-size: 30px;
+	margin: 0 auto;
+	margin-bottom: 10px; }
+.item .icon span {
+	color: #fff; }
+
+#rodape {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid gray;}
+
+.borda-arredondada {
+	width: 200px;
+	height: 70px;
+	background-color: #ffffff; /* Cor de fundo da div */           
+	border-radius: 30px; /* Define um raio para as bordas, criando um efeito arredondado */
+	text-align: center;
+	color: #fff; /* Cor do texto dentro da div */
+	line-height: 200px; /* Centraliza verticalmente o texto */}
 
 .container-fluid {
   width: 100%;
