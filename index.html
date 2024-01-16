@@ -1,0 +1,57 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="PaginaCSharp.aspx.cs" Inherits="PaginaCSharp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Quadros Recursivos</title>
+    <style>
+        .quadro {
+            border: 2px solid #000;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            float: left;
+        }
+
+        .vermelho {
+            background-color: #FFB6C1;
+        }
+
+        .verde {
+            background-color: #98FB98;
+        }
+
+        .azul {
+            background-color: #ADD8E6;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="quadro vermelho">
+                <h2>Ontem</h2>
+                <asp:Label ID="lblOntem" runat="server" Text=""></asp:Label>
+                <!-- Adicione outros dados relevantes para ontem aqui -->
+                <img src="icone_ontem.png" alt="Ontem" />
+            </div>
+
+            <div class="quadro verde">
+                <h2>Hoje</h2>
+                <asp:Label ID="lblHoje" runat="server" Text=""></asp:Label>
+                <!-- Adicione outros dados relevantes para hoje aqui -->
+                <img src="icone_hoje.png" alt="Hoje" />
+            </div>
+
+            <div class="quadro azul">
+                <h2>Amanhã</h2>
+                <asp:Label ID="lblAmanha" runat="server" Text=""></asp:Label>
+                <!-- Adicione outros dados relevantes para amanhã aqui -->
+                <img src="icone_amanha.png" alt="Amanhã" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
